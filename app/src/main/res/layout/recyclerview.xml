@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg2"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="7dp">
+
+            <TextView
+                android:id="@+id/atdrc_nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosansm"
+                android:text="강동구"
+                android:textColor="#757474"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/rntfee_free_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosansm"
+                android:text="무료"
+                android:textColor="#009688"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/atdrc_nm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/fclty_nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosansm"
+                android:text="서울형 키즈카페"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/rntfee_free_at"/>
+
+            <TextView
+                android:id="@+id/cttpc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosansm"
+                android:text="02-3425-9398"
+                android:textSize="12sp"
+                android:layout_below="@id/fclty_nm"
+                android:layout_alignStart="@id/fclty_nm" />
+
+                <ImageView
+                    android:id="@+id/call_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_call_24"
+                    android:layout_toRightOf="@id/cttpc"
+                    android:layout_below="@id/fclty_nm"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/bass_adres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosansm"
+                    android:text="서울특별시 마포구 상암산로1길 71"
+                    android:textSize="14sp"
+                    android:layout_below="@id/cttpc"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/detail_adres"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/notosansm"-->
+<!--                    android:text="초안산생태공원 내 위치 (창동)"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginTop="120dp"/>-->
+
+                <TextView
+                    android:id="@+id/open_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosansm"
+                    android:text="운영일: "
+                    android:textColor="#00BCD4"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/bass_adres"/>
+
+                <TextView
+                    android:id="@+id/close_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosansm"
+                    android:text="휴관일 : "
+                    android:textColor="#E91E63"
+                    android:textSize="12sp"
+                    android:layout_below="@id/open_week"/>
+
+                <TextView
+                    android:id="@+id/posbl_agrde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosansm"
+                    android:text="4~6세만 이용가능합니다."
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
